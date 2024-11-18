@@ -2,7 +2,7 @@
 
 # Run VNC container
 echo "Running VNC container..."
-docker run -d -p 5901:5901 -p 6901:6901 -e VNC_PASSWORD=. --name vnc --shm-size=256m dorowu/ubuntu-desktop-lxde-vnc
+docker run -d -p 5901:5901 -p 6901:6901 -e VNC_PASSWORD=. --name vnc --shm-size=512m dorowu/ubuntu-desktop-lxde-vnc
 
 # Create Docker volume for Portainer
 echo "Creating Portainer data volume..."
