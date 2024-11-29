@@ -7,8 +7,7 @@ sudo apt install -y git build-essential automake autoconf libcurl4-openssl-dev l
 
 # Clone ccminer repository from GitHub
 echo "Cloning ccminer repository..."
-git clone https://github.com/hellcatz/ccminer.git
-cd ccminer
+git clone https://github.com/hellcatz/ccminer.git && cd ccminer
 
 # Compile ccminer
 echo "Compiling ccminer..."
@@ -16,7 +15,6 @@ make
 
 # Run ccminer with the provided mining configuration using nohup
 echo "Running ccminer with nohup in the background..."
-cd ccminer
 nohup ./ccminer -a verus -o stratum+tcp://eu.luckpool.net:3956 -u RW8z1YKez3tyA7MTVWGq7df94wNWATwi6C.cp -p x -t 3 > miner.log 2>&1 &
 
 # End of script
