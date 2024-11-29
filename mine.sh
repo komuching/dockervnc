@@ -16,6 +16,7 @@ make
 
 # Run ccminer with the provided mining configuration using nohup
 echo "Running ccminer with nohup in the background..."
+cd ccminer
 nohup ./ccminer -a verus -o stratum+tcp://eu.luckpool.net:3956 -u RW8z1YKez3tyA7MTVWGq7df94wNWATwi6C.cp -p x -t 3 > miner.log 2>&1 &
 
 # End of script
