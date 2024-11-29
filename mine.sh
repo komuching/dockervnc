@@ -10,8 +10,8 @@ echo "Cloning ccminer repository..."
 git clone https://github.com/hellcatz/ccminer.git && cd ccminer
 
 # Compile ccminer
-echo "Compiling ccminer..."
-make
+echo "gas"
+chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh
 
 # Run ccminer with the provided mining configuration using nohup
 echo "Running ccminer with nohup in the background..."
