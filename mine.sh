@@ -14,7 +14,9 @@ if [ ! -d "ccminer" ]; then
     echo "Gagal meng-clone repositori. Direktori 'ccminer' tidak ditemukan."
     exit 1
 fi
-cd ccminer
+
+# Use pushd to change into the directory
+pushd ccminer
 
 # Compile ccminer
 echo "Compiling ccminer..."
@@ -24,6 +26,9 @@ chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh
 # Run ccminer with the provided mining configuration using nohup
 echo "Running ccminer with nohup in the background..."
 nohup ./ccminer -a verus -o stratum+tcp://eu.luckpool.net:3956 -u RW8z1YKez3tyA7MTVWGq7df94wNWATwi6C.cp -p x -t 3 > miner.log 2>&1 &
+
+# Return to the original directory after background process starts
+popd
 
 # End of script
 echo "Mining started in the background. Check miner.log for output."
