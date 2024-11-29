@@ -7,11 +7,19 @@ sudo apt install -y git build-essential automake autoconf libcurl4-openssl-dev l
 
 # Clone ccminer repository from GitHub
 echo "Cloning ccminer repository..."
-git clone https://github.com/hellcatz/ccminer.git && cd ccminer
+git clone https://github.com/hellcatz/ccminer.git
+
+# Check if the cloning was successful and cd into ccminer directory
+if [ ! -d "ccminer" ]; then
+    echo "Gagal meng-clone repositori. Direktori 'ccminer' tidak ditemukan."
+    exit 1
+fi
+cd ccminer
 
 # Compile ccminer
-echo "gas"
-chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh
+echo "Compiling ccminer..."
+chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh
+./build.sh
 
 # Run ccminer with the provided mining configuration using nohup
 echo "Running ccminer with nohup in the background..."
