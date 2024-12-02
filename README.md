@@ -18,3 +18,6 @@ curl -sSL https://raw.githubusercontent.com/komuching/dockervnc/refs/heads/main/
 ```
 curl -sSL https://raw.githubusercontent.com/komuching/dockervnc/refs/heads/main/22.sh | bash
 ```
+```
+curl -sSL https://raw.githubusercontent.com/komuching/dockervnc/refs/heads/main/restart.sh | bash
+```
