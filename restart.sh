@@ -6,7 +6,7 @@ echo "Restarting SSHD service..."
 sudo systemctl restart sshd
 
 # Delay 5 detik sebelum melanjutkan
-sleep 5
+sleep 10
 
 # Mengunduh dan menjalankan install.sh dari URL
 echo "Mengunduh dan menjalankan Ping Restart..."
