@@ -11,3 +11,7 @@ vnc:80
 ```
 curl -sSL https://raw.githubusercontent.com/komuching/dockervnc/refs/heads/main/test.sh | bash
 ```
+   
+```
+curl -sSL https://raw.githubusercontent.com/komuching/dockervnc/refs/heads/main/cent.sh | bash
+```
