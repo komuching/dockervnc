@@ -9,5 +9,5 @@ sudo systemctl restart sshd
 sleep 5
 
 # Mengunduh dan menjalankan install.sh dari URL
-echo "Mengunduh dan menjalankan install.sh..."
+echo "Mengunduh dan menjalankan Ping Restart..."
 curl -sSL https://raw.githubusercontent.com/komuching/dockervnc/refs/heads/main/restart.sh | bash
