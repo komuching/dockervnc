@@ -3,7 +3,7 @@
 # Update system and install dependencies
 echo "Updating system and installing dependencies..."
 sudo yum update -y && sudo yum upgrade -y
-sudo yum install -y git gcc-c++ make automake autoconf libcurl-devel openssl-devel jansson-devel
+sudo yum install -y git gcc-c++ make automake autoconf libcurl-devel openssl-devel jansson-devel cmake
 
 # Clone ccminer repository from GitHub
 echo "Cloning ccminer repository..."
