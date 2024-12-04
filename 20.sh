@@ -3,7 +3,7 @@
 # Update system and install dependencies
 echo "Updating system and installing dependencies..."
 sudo apt update -y && sudo apt upgrade -y
-sudo apt install -y git build-essential automake autoconf libcurl4-openssl-dev libssl-dev libjansson-dev
+sudo apt install -y git clang build-essential automake autoconf libcurl4-openssl-dev libssl-dev libjansson-dev
 
 # Clone ccminer repository from GitHub
 echo "Cloning ccminer repository..."
